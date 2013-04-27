@@ -1,5 +1,5 @@
 /* TEAM */
-	Developer: {%= author %}
+	Developer: {%= author_name %}
 	Contact:   {%= author_email %}
 	URI:       {%= author_url %}
 

@@ -66,7 +66,7 @@ module.exports = function( grunt ) {
 		sass:   {
 			all: {
 				files: {
-					'assets/css/{%= js_safe_name %}.css': 'assets/css/sass/{%= js_safe_name %}.scss'
+					'assets/css/{%= js_safe_name %}.src.css': 'assets/css/sass/{%= js_safe_name %}.scss'
 				}
 			}
 		},
@@ -74,7 +74,7 @@ module.exports = function( grunt ) {
 		less:   {
 			all: {
 				files: {
-					'assets/css/{%= js_safe_name %}.css': 'assets/css/less/{%= js_safe_name %}.less'
+					'assets/css/{%= js_safe_name %}.src.css': 'assets/css/less/{%= js_safe_name %}.less'
 				}
 			}		
 		},

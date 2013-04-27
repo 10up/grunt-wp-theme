@@ -56,7 +56,9 @@ After running the init command above, you will be presented with a standard dire
     .. .. theme.po
     .. .gitignore
     .. Gruntfile.js
+    .. footer.php
     .. functions.php
+    .. header.php
     .. index.php
     .. style.css
 
@@ -67,6 +69,8 @@ Depending on how you answer the prompt regarding the use of a preprocessor, you 
 If you're using Sass or Less, the raw files will be processed into `/css/filename.src.css` and minified into `/css/filename.min.css`.
 
 If you're using vanilla CSS, the source files will be minified into `/css/filename.min.css`.
+
+*Note:* The `style.css` file in the root of the directory shouldn't contain any style definitions. It's used for populating information on WordPress' themes page only. Your theme's style information should go in the appropriate source directory for your preprocessor under `/assets/css`.
 
 ### JavaScript
 

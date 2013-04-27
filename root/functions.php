@@ -8,7 +8,7 @@
  * functions.php file. The child theme's functions.php file is included before the parent
  * theme's file, so the child theme functions would be used.
  *
- * @package {%= title %]
+ * @package {%= title %}
  * @since 0.1.0
  */
  

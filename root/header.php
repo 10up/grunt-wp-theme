@@ -5,3 +5,4 @@
  * @package {%= title %}
  * @since 0.1.0
  */
+ ?><!DOCTYPE html>

@@ -47,3 +47,13 @@ define( '{%= prefix_caps %}_VERSION', '0.1.0' );
 	wp_enqueue_style( '{%= prefix %}', get_template_directory_uri() . "/assets/css/{%= prefix %}.{$type}.css", array(), {%= prefix_caps %}_VERSION );
  }
  add_action( 'wp_enqueue_scripts', '{%= prefix %}_scripts_styles' );
+ 
+ /**
+  * Add humans.txt to the <head> element.
+  */
+ function {%= prefix %}_header_meta() {
+	$humans = '<link type="text/plain" rel="author" href="' . get_template_directory_uri() . '/humans.txt" />';
+	
+	echo apply_filters( '{%= prefix %}_humans', $humans );
+ }
+ add_action( 'wp_head', '{%= prefix %}_header_meta' );

@@ -1,6 +1,6 @@
 # grunt-wp-theme
 
-> Create a WordPress plugin with [grunt-init][].
+> Create a WordPress theme with [grunt-init][].
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 

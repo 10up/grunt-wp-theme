@@ -60,7 +60,6 @@ After running the init command above, you will be presented with a standard dire
     .. functions.php
     .. header.php
     .. humans.txt
-    .. robots.txt
     .. index.php
     .. screenshot.png
     .. style.css

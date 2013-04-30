@@ -16,7 +16,7 @@ module.exports = function( grunt ) {
 				src: [
 					'assets/js/src/{%= js_safe_name %}.js'
 				],
-				dest: 'assets/js/{%= js_safe_name %}.src.js'
+				dest: 'assets/js/{%= js_safe_name %}.js'
 			}
 		},
 		jshint: {
@@ -45,7 +45,7 @@ module.exports = function( grunt ) {
 		uglify: {
 			all: {
 				files: {
-					'assets/js/{%= js_safe_name %}.min.js': ['assets/js/{%= js_safe_name %}.src.js']
+					'assets/js/{%= js_safe_name %}.min.js': ['assets/js/{%= js_safe_name %}.js']
 				},
 				options: {
 					banner: '/*! <%= pkg.title %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -66,7 +66,7 @@ module.exports = function( grunt ) {
 		sass:   {
 			all: {
 				files: {
-					'assets/css/{%= js_safe_name %}.src.css': 'assets/css/sass/{%= js_safe_name %}.scss'
+					'assets/css/{%= js_safe_name %}.css': 'assets/css/sass/{%= js_safe_name %}.scss'
 				}
 			}
 		},
@@ -74,7 +74,7 @@ module.exports = function( grunt ) {
 		less:   {
 			all: {
 				files: {
-					'assets/css/{%= js_safe_name %}.src.css': 'assets/css/less/{%= js_safe_name %}.less'
+					'assets/css/{%= js_safe_name %}.css': 'assets/css/less/{%= js_safe_name %}.less'
 				}
 			}		
 		},
@@ -91,7 +91,7 @@ module.exports = function( grunt ) {
 				expand: true,
 				{% if ('sass' === css_type || 'less' === css_type) { %}
 				cwd: 'assets/css/',				
-				src: ['{%= js_safe_name %}.src.css'],
+				src: ['{%= js_safe_name %}.css'],
 				{% } else { %}
 				cwd: 'assets/css/src/',
 				src: ['{%= js_safe_name %}.css'],

@@ -4,5 +4,5 @@
 	"assets/css/sass/theme.scss": "assets/css/sass/{%= js_safe_name %}.scss",
 	"assets/css/src/theme.css": "assets/css/src/{%= js_safe_name %}.css",
 	"assets/css/js/src/theme.js": "assets/css/js/src/{%= js_safe_name %}.js",
-	"lang/theme.pot": "lang/{%= prefix %}.pot"
+	"languages/theme.pot": "languages/{%= prefix %}.pot"
 }

@@ -49,11 +49,11 @@ After running the init command above, you will be presented with a standard dire
     .. .. .. /less
     .. .. /js
     .. .. .. /src
-    .. .. /img
-    .. .. .. /src
+    .. /images
+    .. .. /src
     .. /includes
-    .. /lang
-    .. .. theme.po
+    .. /languages
+    .. .. theme.pot
     .. .gitignore
     .. Gruntfile.js
     .. footer.php
@@ -68,7 +68,7 @@ After running the init command above, you will be presented with a standard dire
 
 Depending on how you answer the prompt regarding the use of a preprocessor, you will either have a `/src` directory (CSS), a `/sass` directory (Sass), or a `/less` directory (LESS) under your normal `/css` directory.  The goal here is that you only ever edit files in the related source directory and Grunt will automatically build and minify your final stylesheets directly in `/css`.
 
-If you're using Sass or Less, the raw files will be processed into `/css/filename.src.css` and minified into `/css/filename.min.css`.
+If you're using Sass or Less, the raw files will be processed into `/css/filename.css` and minified into `/css/filename.min.css`.
 
 If you're using vanilla CSS, the source files will be minified into `/css/filename.min.css`.
 
@@ -76,7 +76,7 @@ If you're using vanilla CSS, the source files will be minified into `/css/filena
 
 ### JavaScript
 
-You should only ever be modifying script files in the `/js/src` directory.  Grunt will automatically concatenate and minify your scripts into `/js/filename.src.js` and `/js/filename.min.js`.  These generated files should never be modified directly.
+You should only ever be modifying script files in the `/js/src` directory.  Grunt will automatically concatenate and minify your scripts into `/js/filename.js` and `/js/filename.min.js`.  These generated files should never be modified directly.
 
 ### Images
 

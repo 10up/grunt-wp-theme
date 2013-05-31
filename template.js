@@ -54,7 +54,7 @@ exports.template = function( grunt, init, done ) {
 		};
 		
 		// Sanitize names where we need to for PHP/JS
-		props.name = props.title.replace( ' ', '-' ).toLowerCase();
+		props.name = props.title.replace( /\s+/g, '-' ).toLowerCase();
 		// Development prefix (i.e. to prefix PHP function names, variables)
 		props.prefix = props.prefix.replace('/[^a-z_]/i', '').toLowerCase();
 		// Development prefix in all caps (e.g. for constants)

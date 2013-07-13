@@ -21,14 +21,23 @@ module.exports = function( grunt ) {
 			}
 		},
 		jshint: {
-			all: [
-				'Gruntfile.js',
-				'assets/js/src/**/*.js',
-				'assets/js/test/**/*.js'
-			],
-			options: {
-				jshintrc: '.jshintrc'
-			}
+            browser: {
+                all: [
+                    'assets/js/src/**/*.js',
+                    'assets/js/test/**/*.js'
+                ],
+                options: {
+                    jshintrc: '.jshintrc'
+                }
+            },
+            grunt: {
+                all: [
+                    'Gruntfile.js'
+                ],
+                options: {
+                    jshintrc: '.gruntjshintrc'
+                }
+            }   
 		},
 		uglify: {
 			all: {

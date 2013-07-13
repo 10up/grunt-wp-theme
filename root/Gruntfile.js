@@ -1,6 +1,9 @@
 module.exports = function( grunt ) {
 	'use strict';
 
+    // Load all grunt tasks
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
 	// Project configuration
 	grunt.initConfig( {
 		pkg:    grunt.file.readJSON( 'package.json' ),
@@ -132,18 +135,6 @@ module.exports = function( grunt ) {
 			}
 		}
 	} );
-
-	// Load other tasks
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	{% if ('sass' === css_type) { %}
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	{% } else if ('less' === css_type) { %}
-	grunt.loadNpmTasks('grunt-contrib-less');
-	{% } %}
-	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task.
 	{% if ('sass' === css_type) { %}

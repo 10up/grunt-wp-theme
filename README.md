@@ -84,6 +84,7 @@ The `/img/src` directory exists only to allow you to keep track of source files 
 
 ## Release History
 
+ * 2013-07-18   v0.1.3   Better grunt module inclusion (props @aaronjorbin)
  * 2013-05-31   v0.1.2   Fix a template renaming bug.
  * 2013-04-29   v0.1.1   Update directory structure and minified file names. Fix some naming mismatches.
  * 2013-04-26   v0.1.0   Initial public release

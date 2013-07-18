@@ -31,7 +31,7 @@ exports.template = function( grunt, init, done ) {
 			default: 'wptheme'
 		},
 		init.prompt( 'description', 'The best WordPress theme ever made!' ),
-		init.prompt( 'homepage', 'http://wordpress.org/extend/themes' ),
+		init.prompt( 'homepage', 'http://wordpress.org/themes' ),
 		init.prompt( 'author_name' ),
 		init.prompt( 'author_email' ),
 		init.prompt( 'author_url' ),
@@ -45,7 +45,7 @@ exports.template = function( grunt, init, done ) {
 		props.version = '0.1.0';
 		props.devDependencies = {
 			'grunt': '~0.4.1',
-            'matchdep': '~0.1.2',
+			'matchdep': '~0.1.2',
 			'grunt-contrib-concat': '~0.1.2',
 			'grunt-contrib-uglify': '~0.1.1',
 			'grunt-contrib-cssmin': '~0.6.0',

@@ -1,8 +1,8 @@
 module.exports = function( grunt ) {
 	'use strict';
 
-    // Load all grunt tasks
-    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	// Load all grunt tasks
+	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	// Project configuration
 	grunt.initConfig( {
@@ -24,23 +24,23 @@ module.exports = function( grunt ) {
 			}
 		},
 		jshint: {
-            browser: {
-                all: [
-                    'assets/js/src/**/*.js',
-                    'assets/js/test/**/*.js'
-                ],
-                options: {
-                    jshintrc: '.jshintrc'
-                }
-            },
-            grunt: {
-                all: [
-                    'Gruntfile.js'
-                ],
-                options: {
-                    jshintrc: '.gruntjshintrc'
-                }
-            }   
+			browser: {
+				all: [
+					'assets/js/src/**/*.js',
+					'assets/js/test/**/*.js'
+				],
+				options: {
+					jshintrc: '.jshintrc'
+				}
+			},
+			grunt: {
+				all: [
+					'Gruntfile.js'
+				],
+				options: {
+					jshintrc: '.gruntjshintrc'
+				}
+			}   
 		},
 		uglify: {
 			all: {

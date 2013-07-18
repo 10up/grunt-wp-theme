@@ -3,6 +3,6 @@
 	"assets/css/less/theme.less": "assets/css/less/{%= js_safe_name %}.less",
 	"assets/css/sass/theme.scss": "assets/css/sass/{%= js_safe_name %}.scss",
 	"assets/css/src/theme.css": "assets/css/src/{%= js_safe_name %}.css",
-	"assets/css/js/src/theme.js": "assets/css/js/src/{%= js_safe_name %}.js",
+	"assets/js/src/theme.js": "assets/js/src/{%= js_safe_name %}.js",
 	"languages/theme.pot": "languages/{%= prefix %}.pot"
 }

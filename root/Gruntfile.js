@@ -78,6 +78,17 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
+		{% } else if ('compass' === css_type) { %}
+		compass:   {
+			dist: {                   // Target
+		    	options: {              // Target options
+		    		sassDir: 'assets/css/sass/',
+		    		cssDir: 'assets/css/',
+		    		environment: 'production',
+		    		outputStyle: 'nested'
+		    	}
+			}
+		},
 		{% } %}
 		cssmin: {
 			options: {
@@ -89,7 +100,7 @@ module.exports = function( grunt ) {
 			},
 			minify: {
 				expand: true,
-				{% if ('sass' === css_type || 'less' === css_type) { %}
+				{% if ('sass' === css_type || 'less' === css_type || css_type === 'compass') { %}
 				cwd: 'assets/css/',
 				src: ['{%= js_safe_name %}.css'],
 				{% } else { %}
@@ -105,6 +116,14 @@ module.exports = function( grunt ) {
 			sass: {
 				files: ['assets/css/sass/*.scss'],
 				tasks: ['sass', 'cssmin'],
+				options: {
+					debounceDelay: 500
+				}
+			},
+			{% } else if ('compass' === css_type) { %}
+			compass: {
+				files: ['assets/css/sass/*.scss'],
+				tasks: ['compass', 'cssmin'],
 				options: {
 					debounceDelay: 500
 				}
@@ -141,6 +160,8 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'sass', 'cssmin'] );
 	{% } else if ('less' === css_type) { %}
 	grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'less', 'cssmin'] );
+	{% } else if ('compass' === css_type) { %}
+	grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'compass', 'cssmin'] );
 	{% } else { %}
 	grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'cssmin'] );
 	{% } %}

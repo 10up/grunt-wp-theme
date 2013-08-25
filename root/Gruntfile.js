@@ -122,7 +122,7 @@ module.exports = function( grunt ) {
 			},
 			{% } else if ('compass' === css_type) { %}
 			compass: {
-				files: ['assets/css/sass/*.scss'],
+				files: ['assets/css/sass/*.scss', 'assets/css/sass/partials/*.scss'],
 				tasks: ['compass', 'cssmin'],
 				options: {
 					debounceDelay: 500

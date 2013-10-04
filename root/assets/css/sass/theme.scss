@@ -6,8 +6,8 @@
  * Licensed under the GPLv2+ license.
  */
 
-@include "compass";
-@include "partials/variables"
+@import "compass";
+@import "partials/variables";
 
-@include "partials/normalize"
-@include "partials/typography"
+@import "partials/normalize";
+@import "partials/typography";

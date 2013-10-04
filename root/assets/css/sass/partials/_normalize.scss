@@ -118,6 +118,7 @@ html {
     }
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.5em;
 
     @if not $strict-normalize {
         /* Establish a vertical rhythm unit using $base-line-height. */

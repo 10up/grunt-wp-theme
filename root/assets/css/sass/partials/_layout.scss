@@ -1,0 +1,18 @@
+img {
+	max-width: 100%;
+}
+.aligncenter, .alignmiddle, .alignleft, .alignright {
+	margin: 1em auto;
+	display: block;
+	text-align: center;
+}
+.alignleft {
+	float: left;
+	margin: 1em 1em 1em 0;
+	max-width: 50%;
+}
+.alignright {
+	float: right;
+	margin: 1em 0 1em 1em;
+	max-width: 50%;
+}

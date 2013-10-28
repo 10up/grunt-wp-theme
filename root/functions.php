@@ -52,3 +52,9 @@ function {%= prefix %}_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', '{%= prefix %}_widgets_init' );
+
+/* Edit Excerpt Read More link */
+function {%= prefix %}_replace_excerpt($content) {
+     return '&hellip; <a href="'. get_permalink() .'" class="read-more">Continue Reading >></a>';
+  }
+add_filter('excerpt_more', 'taa_replace_excerpt');

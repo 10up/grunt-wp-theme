@@ -27,8 +27,7 @@ exports.template = function( grunt, init, done ) {
 		init.prompt( 'title', 'WP Theme' ),
 		{
 			name   : 'prefix',
-			message: 'PHP function prefix (alpha and underscore characters only)',
-			default: 'wptheme'
+			message: 'PHP function prefix (alpha and underscore characters only)'
 		},
 		init.prompt( 'description', 'The best WordPress theme ever made!' ),
 		init.prompt( 'homepage', 'http://wordpress.org/themes' ),
@@ -38,7 +37,7 @@ exports.template = function( grunt, init, done ) {
 		{
 			name: 'css_type',
 			message: 'CSS Preprocessor: Will you use "Sass", "LESS", "Compass" or "none" for CSS with this project?',
-			default: 'Sass'
+			default: 'Compass'
 		}
 	], function( err, props ) {
 		props.keywords = [];

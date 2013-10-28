@@ -8,6 +8,18 @@
 
 @import "compass";
 @import "partials/variables";
+@import "partials/mixins";
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
 
 @import "partials/normalize";
+@import "partials/icon-font";
 @import "partials/typography";
+@import "partials/layout";
+
+@import "partials/header";
+@import "partials/sidebar";
+@import "partials/front-page";
+@import "partials/footer";

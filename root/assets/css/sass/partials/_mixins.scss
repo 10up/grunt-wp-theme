@@ -1,0 +1,17 @@
+@mixin bp($point) {
+  @if $point == mercury {
+    @media (min-width: 32.5em) { @content; }
+  }
+  @else if $point == venus {
+    @media (min-width: 50em) { @content; }
+  }
+  @else if $point == earth {
+    @media (min-width: 60em)  { @content; }
+  }
+  @else if $point == moon {
+    @media (min-width: 68em)  { @content; }
+  }
+  @else if $point == mars {
+    @media (min-width: 80em)  { @content; }
+  }
+}

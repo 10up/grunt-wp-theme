@@ -3,14 +3,17 @@
 */
 
 @font-face {
-  font-family: 'romelli';
-  src: url('../fonts/romelli.eot');
-  src: local('?'), url("../fonts/romelli.woff") format("woff"), url("../fonts/romelli.otf") format("opentype"), url("../fonts/romelli.svg#grablau") format("svg");
+  font-family: 'icomoon';
+  src: url('/wp-content/themes/icomoon/fonts/icomoon.eot');
+  src: local('?'), url("/wp-content/themes/icomoon/fonts/icomoon.woff") format("woff"), url("/wp-content/themes/icomoon/fonts/icomoon.otf") format("opentype"), url("/wp-content/themes/icomoon/fonts/icomoon.svg#icomoon") format("svg");
 }
 @media screen and (max-device-width: 480px) {
   @font-face {
-    font-family: "romelli";
-    src: url("../fonts/romelli.woff") format("woff"), url("../fonts/romelli.otf") format("opentype"), url("../fonts/romelli.svg#grablau") format("svg");
+    font-family: 'icomoon';
+    src: url('/wp-content/themes/icomoon/fonts/icomoon.eot');
+    src: url('/wp-content/themes/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/icomoon/fonts/icomoon.svg#icomoon') format('svg'), url('/wp-content/themes/icomoon/fonts/icomoon.woff') format('woff'), url('/wp-content/themes/icomoon/fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
 }
 

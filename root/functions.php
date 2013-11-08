@@ -57,4 +57,4 @@ add_action( 'widgets_init', '{%= prefix %}_widgets_init' );
 function {%= prefix %}_replace_excerpt($content) {
      return '&hellip; <a href="'. get_permalink() .'" class="read-more">Continue Reading >></a>';
   }
-add_filter('excerpt_more', 'taa_replace_excerpt');
+add_filter('excerpt_more', '{%= prefix %}_replace_excerpt');

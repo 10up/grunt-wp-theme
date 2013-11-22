@@ -5,6 +5,9 @@ img {
 	margin: 1em auto;
 	display: block;
 	text-align: center;
+	&:first-child {
+		margin-top: 0;
+	}
 }
 .alignleft {
 	float: left;

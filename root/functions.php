@@ -58,3 +58,7 @@ function {%= prefix %}_replace_excerpt($content) {
      return '&hellip; <a href="'. get_permalink() .'" class="read-more">Continue Reading >></a>';
   }
 add_filter('excerpt_more', '{%= prefix %}_replace_excerpt');
+
+/*Includes*/
+require_once 'includes/theme_options.php';
+require_once 'includes/theme_options.php';

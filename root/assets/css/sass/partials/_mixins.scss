@@ -1,0 +1,32 @@
+@mixin bp($point, $point2: n) {
+  @if $point == mercury {
+    $point: 37.5em;
+  } @else if $point == venus {
+    $point: 50em;
+  } @else if $point == earth {
+    $point: 64em;
+  } @else if $point == moon {
+    $point: 64em;
+  } @else if $point == mars {
+    $point: 80em;
+  }
+  @if $point2 == mercury {
+    $point2: 37.5em;
+  } @else if $point2 == venus {
+    $point2: 50em;
+  } @else if $point2 == earth {
+    $point2: 64em;
+  } @else if $point2 == moon {
+    $point2: 64em;
+  } @else if $point2 == mars {
+    $point2: 80em;
+  }
+
+  @if $point2 == n{
+    @media(min-width: $point){ @content; }
+  } @else if $point == n {
+    @media(max-width : $point2){ @content; }
+  } @else {
+    @media(min-width : $point) and (max-width : $point2){ @content; }
+  }
+}

@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * The Front Page template file
  *
  * @package {%= title %}
  * @since 0.1.0

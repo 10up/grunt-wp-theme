@@ -27,8 +27,7 @@ exports.template = function( grunt, init, done ) {
 		init.prompt( 'title', 'WP Theme' ),
 		{
 			name   : 'prefix',
-			message: 'PHP function prefix (alpha and underscore characters only)',
-			default: 'wptheme'
+			message: 'PHP function prefix (alpha and underscore characters only)'
 		},
 		init.prompt( 'description', 'The best WordPress theme ever made!' ),
 		init.prompt( 'homepage', 'http://wordpress.org/themes' ),
@@ -37,8 +36,8 @@ exports.template = function( grunt, init, done ) {
 		init.prompt( 'author_url' ),
 		{
 			name: 'css_type',
-			message: 'CSS Preprocessor: Will you use "Sass", "LESS", or "none" for CSS with this project?',
-			default: 'Sass'
+			message: 'CSS Preprocessor: Will you use "Sass", "LESS", "Compass" or "none" for CSS with this project?',
+			default: 'Compass'
 		}
 	], function( err, props ) {
 		props.keywords = [];
@@ -83,6 +82,13 @@ exports.template = function( grunt, init, done ) {
 				delete files[ 'assets/css/sass/' + props.js_safe_name + '.scss'];
 				
 				props.css_type = 'none';
+
+			case 'c':
+				delete files[ 'assets/css/less/' + props.js_safe_name + '.less'];
+				delete files[ 'assets/css/src/' + props.js_safe_name + '.css' ];
+				
+				props.devDependencies["grunt-contrib-compass"] = "~0.4.1";
+				props.css_type = 'compass';
 				break;
 			// SASS is the default
 			default:

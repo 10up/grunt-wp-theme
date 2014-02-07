@@ -1,0 +1,53 @@
+/* You'll need to update this with the proper pathing and font name. This is the template.
+   Hopefully I'll be able to update this in the future to tie into the Original Grunt Install
+*/
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/wp-content/themes/icomoon/fonts/icomoon.eot');
+  src: local('?'), url("/wp-content/themes/icomoon/fonts/icomoon.woff") format("woff"), url("/wp-content/themes/icomoon/fonts/icomoon.otf") format("opentype"), url("/wp-content/themes/icomoon/fonts/icomoon.svg#icomoon") format("svg");
+}
+@media screen and (max-device-width: 480px) {
+  @font-face {
+    font-family: 'icomoon';
+    src: url('/wp-content/themes/icomoon/fonts/icomoon.eot');
+    src: url('/wp-content/themes/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/icomoon/fonts/icomoon.svg#icomoon') format('svg'), url('/wp-content/themes/icomoon/fonts/icomoon.woff') format('woff'), url('/wp-content/themes/icomoon/fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[data-icon=f]:hover, [data-icon=f]:focus, a[data-icon=f]:hover, a[data-icon=f]:focus {
+	color: #3B5998;
+}
+[data-icon=t]:hover, [data-icon=t]:focus, a[data-icon=t]:hover, a[data-icon=t]:focus {
+	color: #4099FF;
+}
+[data-icon=g]:hover, [data-icon=g]:focus, a[data-icon=g]:hover, a[data-icon=g]:focus {
+	color: #dd4b39;
+}
+[data-icon=y]:hover, [data-icon=y]:focus, a[data-icon=y]:hover, a[data-icon=y]:focus {
+	color: #c41200;
+}
+[data-icon=i]:hover, [data-icon=i]:focus, a[data-icon=i]:hover, a[data-icon=i]:focus {
+	color: #007fb3;
+}
+[data-icon=q]:hover, [data-icon=q]:focus, a[data-icon=q]:hover, a[data-icon=q]:focus {
+	color: #216aae;
+}
+[data-icon=u]:hover, [data-icon=u]:focus, a[data-icon=u]:hover, a[data-icon=u]:focus {
+  color: #CD332D;
+}

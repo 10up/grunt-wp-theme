@@ -11,9 +11,5 @@
 	"node": true,
   "quotmark": true,
 	"sub":     true,
-	"undef":   true,
-	"globals": {
-		"exports": true,
-		"module":  false
-	}
+	"undef":   true
 }

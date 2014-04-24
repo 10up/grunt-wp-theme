@@ -1,15 +1,16 @@
 {
-	"boss":    true,
-	"curly":   true,
-	"eqeqeq":  true,
-	"eqnull":  true,
-	"immed":   true,
-	"jquery":  true,
-	"latedef": true,
-	"newcap":  true,
-	"noarg":   true,
+	"boss":     true,
+	"curly":    true,
+	"eqeqeq":   true,
+	"eqnull":   true,
+	"immed":    true,
+	"jquery":   true,
+	"latedef":  true,
+	"newcap":   true,
+	"noarg":    true,
+	"quotmark": true,
+	"sub":      true,
+	"undef":    true
+	
 	"node": true,
-  "quotmark": true,
-	"sub":     true,
-	"undef":   true
 }

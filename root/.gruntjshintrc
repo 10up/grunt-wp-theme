@@ -10,7 +10,7 @@
 	"noarg":    true,
 	"quotmark": true,
 	"sub":      true,
-	"undef":    true
+	"undef":    true,
 	
-	"node": true,
+	"node": true
 }

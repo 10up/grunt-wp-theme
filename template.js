@@ -74,7 +74,7 @@ exports.template = function( grunt, init, done ) {
 				delete files[ 'assets/css/sass/' + props.js_safe_name + '.scss'];
 				delete files[ 'assets/css/src/' + props.js_safe_name + '.css' ];
 				
-				props.devDependencies["grunt-contrib-less"] = "~0.5.0";
+				props.devDependencies["grunt-contrib-less"] = "~0.11.2";
 				props.css_type = 'less';
 				break;
 			case 'n':
@@ -89,7 +89,7 @@ exports.template = function( grunt, init, done ) {
 				delete files[ 'assets/css/less/' + props.js_safe_name + '.less'];
 				delete files[ 'assets/css/src/' + props.js_safe_name + '.css' ];
 				
-				props.devDependencies["grunt-contrib-sass"] = "~0.2.2";
+				props.devDependencies["grunt-contrib-sass"] = "~0.7.3";
 				props.css_type = 'sass';
 				break;
 		}

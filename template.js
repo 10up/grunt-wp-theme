@@ -44,14 +44,14 @@ exports.template = function( grunt, init, done ) {
 		props.keywords = [];
 		props.version = '0.1.0';
 		props.devDependencies = {
-			'grunt': '~0.4.1',
+			'grunt': '~0.4.5',
 			'matchdep': '~0.1.2',
-			'grunt-contrib-concat': '~0.1.2',
-			'grunt-contrib-uglify': '~0.1.1',
-			'grunt-contrib-cssmin': '~0.6.0',
-			'grunt-contrib-jshint': '~0.1.1',
-			'grunt-contrib-nodeunit': '~0.1.2',
-			'grunt-contrib-watch': '~0.2.0',
+			'grunt-contrib-concat': '~0.5.0',
+			'grunt-contrib-uglify': '~0.6.0',
+			'grunt-contrib-cssmin': '~0.10.0',
+			'grunt-contrib-jshint': '~0.10.0',
+			'grunt-contrib-nodeunit': '~0.4.1',
+			'grunt-contrib-watch': '~0.6.1',
 		};
 
 		// Sanitize names where we need to for PHP/JS

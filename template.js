@@ -100,7 +100,7 @@ exports.template = function( grunt, init, done ) {
 		init.copyAndProcess( files, props );
 
 		// Generate package.json file
-		init.writePackageJSON( 'package.json', props );
+		init.writePackageJSON( 'package.json', props, {noProcess: 'screenshot.png''} );
 
 		// Done!
 		done();

@@ -52,6 +52,8 @@ exports.template = function( grunt, init, done ) {
 			'grunt-contrib-jshint': '~0.10.0',
 			'grunt-contrib-nodeunit': '~0.4.1',
 			'grunt-contrib-watch': '~0.6.1',
+			'grunt-pot': '^0.1.2',
+			'grunt-po2mo': '~0.1.2'
 		};
 
 		// Sanitize names where we need to for PHP/JS

@@ -51,11 +51,17 @@ After running the init command above, you will be presented with a standard dire
     .. .. .. /src
     .. /images
     .. .. /src
-    .. /includes
+    .. /inc
+    .. .. /cache
+    .. .. /classes
+    .. .. /functions
+    .. .. .. header.php
+    .. .. .. theme.php
     .. /languages
     .. .. theme.pot
     .. .gitignore
     .. Gruntfile.js
+    .. constants.php
     .. footer.php
     .. functions.php
     .. header.php

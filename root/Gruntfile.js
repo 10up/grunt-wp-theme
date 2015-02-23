@@ -100,6 +100,7 @@ module.exports = function( grunt ) {
 				ext: '.min.css'
 			}
 		},
+		{% if ('sass' === css_type) { %}
 		sassdoc: {
 		    default: {
 		        src: 'assets/css/sass',
@@ -117,6 +118,7 @@ module.exports = function( grunt ) {
 		        }
 		    }
 		},
+		{% } %}
 		watch:  {
 			{% if ('sass' === css_type) { %}
 			sass: {

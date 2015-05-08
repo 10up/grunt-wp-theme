@@ -5,7 +5,7 @@
  * @since 0.1.0
  */
 
-namespace { %= prefix_caps % }\Constants;
+namespace {%= prefix_caps %}\Constants;
 
 // Useful global constants
 if ( ! defined( '{%= prefix_caps %}_VERSION' ) ) {

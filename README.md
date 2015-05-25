@@ -1,5 +1,7 @@
 # grunt-wp-theme
 
+**Deprecated** Please use [generator-wp-make](https://github.com/10up/generator-wp-make) instead.
+
 > Create a WordPress theme with [grunt-init][].
 
 [grunt-init]: http://gruntjs.com/project-scaffolding

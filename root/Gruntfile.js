@@ -40,7 +40,7 @@ module.exports = function( grunt ) {
 				options: {
 					jshintrc: '.gruntjshintrc'
 				}
-			}   
+			}
 		},
 		uglify: {
 			all: {
@@ -100,6 +100,25 @@ module.exports = function( grunt ) {
 				ext: '.min.css'
 			}
 		},
+		{% if ('sass' === css_type) { %}
+		sassdoc: {
+		    default: {
+		        src: 'assets/css/sass',
+		        dest: 'docs',
+		        options: {
+		            groups: {
+		                'undefined': 'General',
+		                'helpers': 'Helpers',
+		                'breakpoints': 'Media Queries',
+		                'fonts': 'Fonts',
+		                'display': 'Display',
+		                'grid': 'Grid',
+		            },
+		            force: true
+		        }
+		    }
+		},
+		{% } %}
 		watch:  {
 			{% if ('sass' === css_type) { %}
 			sass: {
